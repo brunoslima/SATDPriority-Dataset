@@ -1,0 +1,148 @@
+SATD;Path;Line;Priority
+* Dialog showing an error message and the exception's stack trace on request.  * <p>  * TODO (@author fdietz): I've currently replaced MultiLineLabel with JLabel- because it totally   * destroys the layout. Somehow the MultiLineLabel doesn't respect the JDialog  * size.  *   * @author fdietz;src/columba/Core/org/columba/Core/gui/util/ErrorDialog.java;50-58;1.0
+FIXME -- This will most likely not work.;src/columba/Core/org/columba/Core/xml/XmlElement.java;235;1.0
+TODO: fix parser exception;src/mail/Core/org/columba/mail/folder/AbstractLocalFolder.java;380;1.0
+TODO (@author fdietz): fix account info panel check;src/mail/Core/org/columba/mail/gui/composer/ComposerController.java;452;1.0
+BUGFIX but don't know why that bug occurs;src/mail/Core/org/columba/mail/gui/tree/selection/TreeSelectionHandler.java;87;1.0
+bug #999969 (fdietz): classcast exception;src/mail/Core/org/columba/mail/gui/tree/util/SelectFolderDialog.java;148;1.0
+* Transforms urls into HTML just as substituteURL(String)-      * but tries to ignore urls- which are already links- if the ignore      * links flag is set.      * <br>      * This extended functionality is necessary when parsing a text which      * is already (partly) html.      * <br>      * FIXME: Can this be done smarter- i.e. directly with reg. expr. without manual parsing??      *      * @param         s                                input text      * @param        ignoreLinks                if true link tags are ignored. This gives a      *                                                         wrong result if some urls are already links      *                                                         (but uses reg. expr. directly- and is      *                                                         therefore faster)      * @return        text with urls;src/mail/Core/org/columba/mail/parser/text/HtmlParser.java;718-734;1.0
+* Transforms email-addresses into HTML just as      * substituteEmailAddress(String)- but tries to ignore email-addresses-      * which are already links- if the ignore links flag is set.      * <br>      * This extended functionality is necessary when parsing a text which      * is already (partly) html.      * <br>      * FIXME: Can this be done smarter- i.e. directly with reg. expr. without manual parsing??      *      * @param         s                                input text      * @param        ignoreLinks                if true link tags are ignored. This gives a      *                                                         wrong result if some e-mail adresses are      *                                                         already links (but uses reg. expr. directly-      *                                                         and is therefore faster)      * @return        text with email-adresses transformed to links;src/mail/Core/org/columba/mail/parser/text/HtmlParser.java;613-629;1.0
+TODO: fix updateActions;src/columba/Core/org/columba/Core/gui/focus/FocusManager.java;134;0.5
+bug #996381 (fdietz)- directories only!!;src/columba/Core/org/columba/Core/gui/profiles/ProfileChooserDialog.java;273;0.5
+bug #996381 (fdietz)- directories only!!;src/columba/Core/org/columba/Core/gui/profiles/ProfileManagerDialog.java;289;0.5
+Determine what day of week the first day of the month falls on. It's too  * bad we have to resort to this hack- the Java API provides no means of  * doing this any other way.;src/columba/Core/org/columba/Core/gui/util/DateChooser.java;378-381;0.5
+TODO (@author fdietz): fix the font settings for the content viewer;src/columba/Core/org/columba/Core/help/HelpManager.java;92;0.5
+TODO (@author javaprog): better exception handling;src/columba/Core/org/columba/Core/shutdown/ShutdownManager.java;160;0.5
+FIXME (@author karlpeder): Is 3.2 the proper version of html to refer to?;src/mail/Core/org/columba/mail/composer/MessageComposer.java;282;0.5
+"if ( name == null ) name = ""FIXME""-";src/mail/Core/org/columba/mail/folder/AbstractFolder.java;262;0.5
+FIXME (@author fdietz): is it necessary to make this lower case?;src/mail/Core/org/columba/mail/folder/search/LuceneQueryEngine.java;227;0.5
+FIXME (@author fdietz): Do we need this implementation in a TempFolder?;src/mail/Core/org/columba/mail/folder/temp/TempFolder.java;193;0.5
+TODO (@author fdietz): show error dialoghere;src/mail/Core/org/columba/mail/folderoptions/FolderOptionsController.java;91;0.5
+TODO (@author fdietz): add error dialog;src/mail/Core/org/columba/mail/folderoptions/FolderOptionsController.java;114;0.5
+Hack to ensure charset is set correctly at start-up;src/mail/Core/org/columba/mail/gui/composer/ComposerController.java;200;0.5
+FIXME showAttachmentPanel validate;src/mail/Core/org/columba/mail/gui/composer/ComposerController.java;306;0.5
+"* this regular expression should cover anything from a@a.pt or a@a.com to  * a@a.info. Permits usage of invalid top domains though.  * <p>  * [bug] fdietz: added ""."" and ""-"" as regular characters  * (example:mail@toplevel.mail.de)  * <p>  * TODO: see if we can replace the matching code with Ristretto stuff  *";src/mail/Core/org/columba/mail/gui/composer/ComposerModel.java;77-86;0.5
+bug #997560 (fdietz): CC: should be in Cc:- instead of To:;src/mail/Core/org/columba/mail/gui/composer/command/ReplyToAllCommand.java;103;0.5
+bug #997560 (fdietz): CC: should be in Cc:- instead of To:;src/mail/Core/org/columba/mail/gui/composer/command/ReplyToAllCommand.java;77;0.5
+// TO_DO: Add some proper error handling;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorView.java;503;0.5
+// TO_DO: Add some proper error handling;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorView.java;507;0.5
+// TO_DO: Add some proper error handling;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorView.java;571;0.5
+// TO_DO: Add some proper error handling;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorView.java;575;0.5
+* Configurabe visible columns of the table.  * <p>  * TODO (@author fdietz): adding of columns is not working currently  *   * @author fdietz;src/mail/Core/org/columba/mail/gui/config/columns/ColumnConfigDialog.java;59-65;0.5
+FIXME: no hardcoded Color.white;src/mail/Core/org/columba/mail/gui/message/MessageController.java;88;0.5
+this is wrong! we need the default id.;src/mail/Core/org/columba/mail/gui/message/filter/PGPMessageFilter.java;185;0.5
+TODO: re-enable feature- the following code violates our;src/mail/Core/org/columba/mail/gui/messageframe/MessageFrameController.java;118;0.5
+FIXME threaded-view auto collapse;src/mail/Core/org/columba/mail/gui/table/TableController.java;339;0.5
+* Login to IMAP server.  * <p>  * Ask user for password.  *   * TODO (@author tstich): cleanup if all these ugly if- else cases  * @return array containing Message-Id: header values;src/mail/Core/org/columba/mail/imap/IMAPServer.java;462-470;0.5
+* @param folder  *            TODO  * @return  * @throws CommandCancelledException  * @throws IMAPException ;src/mail/Core/org/columba/mail/imap/IMAPServer.java;1758-1765;0.5
+TODO: fix testcase;src/mail/test/org/columba/mail/filter/plugins/DateFilterTest.java;76;0.5
+TODO: fix testcase;src/mail/test/org/columba/mail/parser/text/HtmlParserTest.java;41;0.5
+"* TODO: fix the HtmlParser- which seems to include "")"" character";src/mail/test/org/columba/mail/parser/text/HtmlParserTest.java;32-35;0.5
+﻿TODO (@author fdietz): addressbookInterface doesn't exist anymore (use AddressbookController instead);src/addressbook/Core/org/columba/addressbook/gui/AddressbookPanel.java;161;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/externaltools/ASpellPlugin.java;54;0.0
+TODO (@author fdietz):: implement;src/columba/Core/org/columba/Core/gui/action/FindAction.java;54;0.0
+TODO (@author fdietz): implement;src/columba/Core/org/columba/Core/gui/action/FindAgainAction.java;39;0.0
+TODO (@author fdietz): implement;src/columba/Core/org/columba/Core/gui/action/PrintSetupAction.java;43;0.0
+Its better to call the Shutdownmanager;src/columba/Core/org/columba/Core/gui/action/ExitAction.java;68;0.0
+TODO (@author fdietz): until we can get all the settings update;src/columba/Core/org/columba/Core/gui/config/GeneralOptionsDialog.java;468;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/externaltools/ExternalToolsDialog.java;113;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/externaltools/ExternalToolsDialog.java;119;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/externaltools/ExternalToolsDialog.java;92;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/externaltools/ExternalToolsWizardLauncher.java;98;0.0
+* TODO (@author fdietz): adapter only --> will be removed!   * @return;src/columba/Core/org/columba/Core/gui/frame/FrameMediator.java;69-72;0.0
+TODO (@author fdietz): add import feature;src/columba/Core/org/columba/Core/gui/profiles/ProfileManagerDialog.java;350;0.0
+TODO (@author fdietz): add export feature;src/columba/Core/org/columba/Core/gui/profiles/ProfileManagerDialog.java;366;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/statusbar/StatusBar.java;437;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/statusbar/StatusBar.java;441;0.0
+* Toolbar which uses xml files to generate itself.  * <p>  * TODO: separate code which creates the toolbar from the swing JToolBar.  *   * @author fdietz;src/columba/Core/org/columba/Core/gui/toolbar/ColumbaToolBar.java;35-41;0.0
+TODO: use UndoableEditEvent to make this really work;src/columba/Core/org/columba/Core/gui/util/CTextField.java;105;0.0
+TODO: use UndoableEditEvent to make this really work;src/columba/Core/org/columba/Core/gui/util/CTextField.java;96;0.0
+TODO: implement this;src/columba/Core/org/columba/Core/gui/util/URLController.java;103;0.0
+TODO: implement this;src/columba/Core/org/columba/Core/gui/util/URLController.java;94;0.0
+TODO: i18n;src/columba/Core/org/columba/Core/gui/util/DateChooserDialog.java;51;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/util/ErrorDialog.java;155;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/util/URLController.java;35;0.0
+TODO (@author fdietz): i18n;src/columba/Core/org/columba/Core/gui/util/URLController.java;50;0.0
+TODO (@author fdietz): associate help with button and root pane;src/columba/Core/org/columba/Core/gui/util/InfoViewerDialog.java;133;0.0
+* Resembles a JComboBox- using a JButton and a JMenu. This has the advantage  * that the user immediately sees all available items.  * <p>  * Use ItemListener to get notified of selection changes.  * <p>  * TODO (@author fdietz): use JComboBox button layout/ui  *   * @author fdietz;src/columba/Core/org/columba/Core/gui/util/ComboMenu.java;34-43;0.0
+TODO Ristretto should handle the logging of streams in another way.;src/columba/Core/org/columba/Core/logging/ColumbaLogger.java;102;0.0
+TODO (@author fdietz): only add console handler if command line option is given;src/columba/Core/org/columba/Core/logging/ColumbaLogger.java;85;0.0
+* TODO (@author karlpeder): Guess that right thing to do is to get height as getDrawingSize().getHeight()-          * since this should take top- and bottom margin of this print          * object into account. But the height seems not to be set          * correctly in computePositionAndSize() (*20030604- karlpeder*);src/columba/Core/org/columba/Core/print/cHTMLPart.java;132-137;0.0
+* Is this mailbox read-only?      * @return TODO      *;src/mail/api/org/columba/mail/folder/IMailbox.java;271-275;0.0
+TODO: Should we take some action to ensure signature is valid;src/mail/Core/org/columba/mail/composer/MessageComposer.java;328;0.0
+TODO (@author karlpeder): If existing meta tags are to be kept- code changes are;src/mail/Core/org/columba/mail/composer/MessageComposer.java;308;0.0
+TODO (@author fdietz): Implement quoting (font color- stylesheet-;src/mail/Core/org/columba/mail/composer/MessageBuilderHelper.java;374;0.0
+"*   * prepend ""> "" characters to the bodytext to specify we are quoting  *   * @param message  *            A <code>Message</code> which contains the bodytext of the  *            message we want reply/forward.  * @param html  *            True for html messages (a different quoting is necessary)  *   * TODO (@author fdietz): we should make this configureable  *";src/mail/Core/org/columba/mail/composer/MessageBuilderHelper.java;353-365;0.0
+TODO (@author fdietz): move this to AbstractMessageFolder constructor;src/mail/Core/org/columba/mail/folder/AbstractLocalFolder.java;100;0.0
+TODO (@author fdietz): move this to AbstractMessageFolder constructor;src/mail/Core/org/columba/mail/folder/AbstractRemoteFolder.java;42;0.0
+* TODO (@author fdietz): move this out-of-folder!;src/mail/Core/org/columba/mail/folder/AbstractMessageFolder.java;807-813;0.0
+->TODO: there should be an interface- instead of the AbstractMessageFolder;src/mail/Core/org/columba/mail/folder/command/SaveFolderConfigurationCommand.java;55;0.0
+-> this works better for most people;src/mail/Core/org/columba/mail/folder/command/CheckForNewMessagesCommand.java;92;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/folder/mailboximport/AbstractMailboxImporter.java;100;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/folder/mailboximport/AbstractMailboxImporter.java;106;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/folder/mailboximport/AbstractMailboxImporter.java;116;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/folder/mailboximport/AbstractMailboxImporter.java;142;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/folder/mailboximport/AbstractMailboxImporter.java;174;0.0
+TODO (@author fdietz): Add proper description here;src/mail/Core/org/columba/mail/folder/mailboximport/MHImporter.java;95;0.0
+@TODO dont use deprecated method;src/mail/Core/org/columba/mail/folder/search/LuceneQueryEngine.java;173;0.0
+@TODO dont use deprecated method;src/mail/Core/org/columba/mail/folder/search/LuceneQueryEngine.java;176;0.0
+@TODO dont use deprecated method;src/mail/Core/org/columba/mail/folder/search/LuceneQueryEngine.java;188;0.0
+@TODO dont use deprecated method;src/mail/Core/org/columba/mail/folder/search/LuceneQueryEngine.java;191;0.0
+TODO (tstich):do some binning to speed up search;src/mail/Core/org/columba/mail/folder/virtual/VirtualFolder.java;541;0.0
+TODO: Open in message frame;src/mail/Core/org/columba/mail/gui/composer/OpenAttachmentAction.java;32;0.0
+TODO: Handle also message attachments from OpenInComposer action;src/mail/Core/org/columba/mail/gui/composer/OpenAttachmentAction.java;33;0.0
+TODO Let the AttachmentViewer get the focus so that this works;src/mail/Core/org/columba/mail/gui/composer/AttachmentView.java;71;0.0
+TODO (@author fdietz): keep track of progress here;src/mail/Core/org/columba/mail/gui/composer/command/OpenMessageWithComposerCommand.java;100;0.0
+TODO (@author karlpeder): Implementation of undo/redo missing;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorController.java;244;0.0
+TODO (@author karlpeder): Implementation of undo/redo missing;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorController.java;252;0.0
+TODO (@author karlpeder): Implementation of undo/redo missing;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorController.java;288;0.0
+TODO (@author karlpeder): Implementation of undo/redo missing;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorController.java;295;0.0
+TODO (@author javaprog):sizeComboBox can be enabled as paragraphComboBox when implemented;src/mail/Core/org/columba/mail/gui/composer/html/HtmlToolbar.java;146;0.0
+TODO (@author fdietz):: implement action for font size combo box!;src/mail/Core/org/columba/mail/gui/composer/html/HtmlToolbar.java;290;0.0
+TODO (@author fdietz): Add implementation if lists is to be supported;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorView.java;430;0.0
+TODO (@author fdietz): Add implementation if lists is to be supported;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorView.java;587;0.0
+TODO (@author fdietz): Add implementation if lists is to be supported;src/mail/Core/org/columba/mail/gui/composer/html/HtmlEditorView.java;603;0.0
+TODO (@author fdietz): Add handling for font size combo box;src/mail/Core/org/columba/mail/gui/composer/html/HtmlToolbar.java;235;0.0
+TODO (@author fdietz): Add handling for font size combo box;src/mail/Core/org/columba/mail/gui/composer/html/HtmlToolbar.java;245;0.0
+"*  * Submenu for choosing the font size settings  * ""-2- -1- 0- 1- 2- 3""  *  * TODO (@author fdietz): add actionPerformed-method- and enabling/disabling based on html/text  *  *  * @author fdietz";src/mail/Core/org/columba/mail/gui/composer/html/action/FontSizeMenu.java;26-35;0.0
+TODO (@author javaprog): Implement somehow if images are to be supported;src/mail/Core/org/columba/mail/gui/composer/html/util/ExtendedHTMLEditorKit.java;88;0.0
+TODO: use UndoableEditEvent to make this really work;src/mail/Core/org/columba/mail/gui/composer/text/TextEditorController.java;270;0.0
+TODO: use UndoableEditEvent to make this really work;src/mail/Core/org/columba/mail/gui/composer/text/TextEditorController.java;278;0.0
+TODO: i18n;src/mail/Core/org/columba/mail/gui/composer/util/SubjectDialog.java;54;0.0
+TODO: i18n;src/mail/Core/org/columba/mail/gui/composer/util/SubjectDialog.java;69;0.0
+TODO (@author fdietz): add undo;src/mail/Core/org/columba/mail/gui/composer/util/FocusAddressComboBox.java;192;0.0
+TODO (@author fdietz): add redo;src/mail/Core/org/columba/mail/gui/composer/util/FocusAddressComboBox.java;177;0.0
+TODO: reactivate when feature is supported;src/mail/Core/org/columba/mail/gui/config/account/SecurityPanel.java;132;0.0
+TODO: i18n?;src/mail/Core/org/columba/mail/gui/config/account/IncomingServerPanel.java;352;0.0
+TODO (@author fdietz): All this code for creating a new IMAPRootFolder should;src/mail/Core/org/columba/mail/gui/config/accountwizard/AccountCreator.java;65;0.0
+its maybe better to leave this option out of the dialog;src/mail/Core/org/columba/mail/gui/config/general/MailOptionsDialog.java;315;0.0
+TODO (@author waffel): encrypt AND sign dosN#t work. The message is always only;src/mail/Core/org/columba/mail/gui/message/filter/PGPMessageFilter.java;121;0.0
+TODO (@author fdietz): should be removed if we only use Streams!;src/mail/Core/org/columba/mail/gui/message/filter/PGPMessageFilter.java;246;0.0
+TODO (@author fdietz): make i18n!;src/mail/Core/org/columba/mail/gui/message/filter/PGPMessageFilter.java;212;0.0
+TODO (@author karlpeder): make a DataFlavor that can handle;src/mail/Core/org/columba/mail/gui/message/viewer/TextViewer.java;529;0.0
+TODO (@author fdietz): use value in initStyleSheet();src/mail/Core/org/columba/mail/gui/message/viewer/TextViewer.java;177;0.0
+todo is not supported;src/mail/Core/org/columba/mail/gui/table/TableController.java;645;0.0
+TODO:;src/mail/Core/org/columba/mail/gui/table/action/PasteAction.java;57;0.0
+TODO (@author fdietz): implement custom menuitem renderer;src/mail/Core/org/columba/mail/gui/table/action/ColorMessageMenu.java;72;0.0
+TODO (@author fdietz): add central place- which keeps a list of all possible;src/mail/Core/org/columba/mail/gui/table/action/ColorMessageMenu.java;45;0.0
+* Parse References: header value and save every found Message-Id: in array.  * <p>  * TODO (@author tistch): cleanup tokenizer- this could be much faster using  * regexp  *  ;src/mail/Core/org/columba/mail/gui/table/model/TableModelThreadedView.java;78-88;0.0
+* Delete all messages in this folder.;src/mail/Core/org/columba/mail/gui/tree/action/EmptyFolderAction.java;28-33;0.0
+TODO: Show dialog;src/mail/Core/org/columba/mail/imap/IMAPServer.java;1829;0.0
+* @author Timo  *  * TODO To change the template for this generated type comment go to  * Window - Preferences - Java - Code Generation - Code and Comments;src/mail/Core/org/columba/mail/nativ/defaultmailclient/SystemDefaultMailClient.java;20-25;0.0
+* @author Timo  *  * TODO To change the template for this generated type comment go to  * Window - Preferences - Java - Code Generation - Code and Comments;src/mail/Core/org/columba/mail/nativ/defaultmailclient/SystemDefaultMailClientHandler.java;23-28;0.0
+TODO (@author tstich): do something;src/mail/Core/org/columba/mail/parser/PassiveHeaderParserInputStream.java;92;0.0
+TODO (@author karlpeder): Extend handling of special entities as in restoreSpecialCharacters;src/mail/Core/org/columba/mail/parser/text/HtmlParser.java;472;0.0
+TODO (@author fdietz): Add more special entities - e.g. accenture chars such as ?;src/mail/Core/org/columba/mail/parser/text/HtmlParser.java;105;0.0
+"* Replaces special chars - <->-&-\t-\n-"" - with the special      * entities used in html (amp- nbsp- ...). Then the complete      * text is surrounded with proper html tags: Starting- and      * ending html tag- header section and body section.      * The complete body section is sorround with p tags.      * <br>      * This is the same as first calling substituteSpecialCharacters      * and then add starting and ending html tags etc.      * <br>      * Further more urls and email adresses are converted into links      * Optionally a title and css definition is inserted in the      * html header.      * <br>      *      * TODO (@author fdietz): Add support for smilies and coloring of quoted text      *      * @param        text        Text to convert to html      * @param        title        Title to include in header- not used if null      * @param        css                Style sheet def. to include in header-      *                                         not used if null.      *                                         The input shall not include the style tag      * @return        Text converted to html      * @author        Karl Peder Olesen (karlpeder)- 20030916";src/mail/Core/org/columba/mail/parser/text/HtmlParser.java;294-318;0.0
+TODO: UPDATE! @author fdietz;src/mail/Core/org/columba/mail/pop3/POP3Server.java;243;0.0
+TODO: Add dialog to inform user that the smtp server;src/mail/Core/org/columba/mail/smtp/SMTPServer.java;207;0.0
+TODO: get the validation working CORRECTLY !;src/mail/Core/org/columba/mail/smtp/command/SendMessageCommand.java;107;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/spam/SpamController.java;302;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/spam/command/LearnMessageAsHamCommand.java;66;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/spam/command/LearnMessageAsSpamCommand.java;66;0.0
+TODO (@author fdietz): i18n;src/mail/Core/org/columba/mail/spam/command/ScoreMessageCommand.java;108;0.0
+TODO: Return content type according to the mime part in the mail;src/mail/Core/org/columba/mail/url/cid/CidURLConnection.java;36;0.0
+TODO: Return content encoding according to the mime part in the mail;src/mail/Core/org/columba/mail/url/cid/CidURLConnection.java;41;0.0
+TODO: Open stream from the mime part specified by contentID of the;src/mail/Core/org/columba/mail/url/cid/CidURLConnection.java;46;0.0
+TODO (@author fdietz):: implement test;src/mail/test/org/columba/mail/composer/ToTest.java;88;0.0
+* Test cases for generating subject lines- when replying and/or forwarding  * messages  * <p>  *  * TODO: Re:[columba-devel]test-subject  *  * @author fdietz;src/mail/test/org/columba/mail/composer/SubjectTest.java;23-31;0.0
